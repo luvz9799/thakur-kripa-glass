@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thakur Kripa Glass &amp; Aluminium — Kota, Rajasthan</title>
+<meta name="description" content="Glass, mirrors and aluminium — cut to size and fitted on-site. 2mm to 12mm glass, toughened glass, LED mirrors, aluminium windows &amp; doors. Raipura, Kota, Rajasthan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F7F5;
+    --bg-2:#E9F0EC;
+    --ink:#0A211C;
+    --deep:#0B322B;
+    --deep-2:#124A40;
+    --emerald:#1C6B5A;
+    --brass:#B9873B;
+    --brass-lite:#E7C580;
+    --muted:#59706A;
+    --muted-lite:#9DB3AC;
+    --line:rgba(11,50,43,0.14);
+    --radius:20px;
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.display{
+    font-family:'Fraunces',serif;
+    letter-spacing:-0.015em;
+    margin:0;
+    font-weight:600;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  :focus-visible{outline:2px solid var(--brass); outline-offset:3px;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 26px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(16px) saturate(150%);
+    -webkit-backdrop-filter:blur(16px) saturate(150%);
+    background:rgba(244,247,245,0.78);
+    border-bottom:1px solid var(--line);
+    transition:height .3s;
+  }
+  nav.wrap{display:flex; align-items:center; justify-content:space-between; height:74px;}
+  .brand{display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--ink);}
+  .brand-mark{
+    width:38px; height:38px; border-radius:10px; flex:none; position:relative;
+    background:linear-gradient(135deg, var(--emerald) 0%, var(--deep) 55%, #06231e 100%);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,0.18), 0 6px 14px -6px rgba(11,50,43,0.5);
+    overflow:hidden;
+  }
+  .brand-mark::before{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.55) 50%, transparent 65%);
+    transform:translateX(-120%); animation:markShine 4.5s ease-in-out infinite;
+  }
+  .brand-mark::after{
+    content:"TK"; position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-weight:600; font-size:0.9rem; color:var(--brass-lite);
+    letter-spacing:0.02em;
+  }
+  @keyframes markShine{0%,100%{transform:translateX(-120%);}55%,100%{transform:translateX(120%);}}
+  .brand-name{font-family:'Fraunces',serif; font-weight:600; font-size:1.12rem; line-height:1.05;}
+  .brand-name small{display:block; font-family:'IBM Plex Mono',monospace; font-weight:400; font-size:0.6rem; color:var(--muted); letter-spacing:0.16em; margin-top:2px;}
+  .nav-links{display:flex; align-items:center; gap:30px; font-size:0.92rem; font-weight:500;}
+  .nav-links a{text-decoration:none; color:var(--muted); transition:color .2s;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--deep); color:#fff; padding:11px 18px; border-radius:100px;
+    text-decoration:none; font-size:0.86rem; font-weight:600;
+    transition:transform .2s, background .2s, box-shadow .2s;
+    box-shadow:0 8px 20px -10px rgba(11,50,43,0.6);
+  }
+  .nav-cta:hover{background:var(--brass); transform:translateY(-1px);}
+  .nav-cta svg{width:15px; height:15px;}
+  @media(max-width:860px){ .nav-links{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative; padding:70px 0 40px; overflow:hidden;}
+  .hero::before{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:
+      radial-gradient(55% 50% at 85% 6%, rgba(185,135,59,0.12), transparent 60%),
+      radial-gradient(50% 55% at 6% 92%, rgba(28,107,90,0.16), transparent 60%);
+  }
+  .hero-grid{position:relative; z-index:1; display:grid; grid-template-columns:1.02fr 0.98fr; gap:52px; align-items:center;}
+  @media(max-width:960px){ .hero-grid{grid-template-columns:1fr; gap:36px;} }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:9px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.16em;
+    text-transform:uppercase; color:var(--brass); margin-bottom:22px;
+  }
+  .eyebrow::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--brass);}
+
+  .hero-brand{font-family:'Fraunces',serif; line-height:0.94; font-weight:600;}
+  .hero-brand .l1{
+    display:block; font-size:clamp(3.1rem, 9.5vw, 6.6rem); color:var(--ink);
+    background:linear-gradient(180deg, var(--ink) 0%, #1a3f37 100%);
+    -webkit-background-clip:text; background-clip:text;
+  }
+  .hero-brand .l2{
+    display:block; font-size:clamp(3.1rem, 9.5vw, 6.6rem); font-style:italic; font-weight:500;
+    background:linear-gradient(100deg, var(--brass) 0%, var(--brass-lite) 55%, var(--emerald) 105%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero-sub{
+    display:block; font-family:'IBM Plex Mono',monospace; font-size:clamp(0.72rem,1.7vw,0.92rem);
+    letter-spacing:0.42em; text-transform:uppercase; color:var(--muted); margin-top:16px; padding-left:4px;
+  }
+  .hero p.lead{margin-top:24px; max-width:470px; font-size:1.05rem; line-height:1.65; color:var(--muted);}
+  .hero-ctas{display:flex; flex-wrap:wrap; gap:13px; margin-top:30px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:9px; padding:14px 24px; border-radius:100px;
+    font-weight:600; font-size:0.94rem; text-decoration:none; border:1px solid transparent; cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn svg{width:17px; height:17px;}
+  .btn-primary{background:var(--deep); color:#fff; box-shadow:0 12px 26px -12px rgba(11,50,43,0.6);}
+  .btn-primary:hover{background:var(--brass); transform:translateY(-2px); box-shadow:0 16px 30px -12px rgba(185,135,59,0.55);}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:rgba(11,50,43,0.2);}
+  .btn-ghost:hover{border-color:var(--ink); transform:translateY(-2px);}
+
+  .trust-row{display:flex; gap:22px; margin-top:34px; flex-wrap:wrap;}
+  .trust-item{display:flex; align-items:center; gap:8px; font-size:0.85rem; color:var(--muted); font-weight:500;}
+  .trust-item svg{width:17px; height:17px; color:var(--brass); flex:none;}
+
+  /* hero text — left-to-right entrance on load */
+  @keyframes heroIn{from{opacity:0; transform:translateX(-40px);} to{opacity:1; transform:translateX(0);}}
+  .hero-copy .eyebrow,
+  .hero-copy .hero-brand .l1,
+  .hero-copy .hero-brand .l2,
+  .hero-copy .hero-brand .hero-sub,
+  .hero-copy .lead,
+  .hero-copy .hero-ctas,
+  .hero-copy .trust-row{opacity:0; animation:heroIn .85s cubic-bezier(.2,.7,.2,1) forwards;}
+  .hero-copy .eyebrow{animation-delay:.05s;}
+  .hero-copy .hero-brand .l1{animation-delay:.16s;}
+  .hero-copy .hero-brand .l2{animation-delay:.3s;}
+  .hero-copy .hero-brand .hero-sub{animation-delay:.42s;}
+  .hero-copy .lead{animation-delay:.54s;}
+  .hero-copy .hero-ctas{animation-delay:.66s;}
+  .hero-copy .trust-row{animation-delay:.78s;}
+  @media (prefers-reduced-motion: reduce){
+    .hero-copy .eyebrow,.hero-copy .hero-brand .l1,.hero-copy .hero-brand .l2,
+    .hero-copy .hero-brand .hero-sub,.hero-copy .lead,.hero-copy .hero-ctas,.hero-copy .trust-row{opacity:1; animation:none; transform:none;}
+  }
+
+  /* hero image */
+  .hero-visual{position:relative;}
+  .hero-photo{
+    position:relative; border-radius:24px; overflow:hidden;
+    box-shadow:0 40px 70px -30px rgba(11,50,43,0.5), inset 0 0 0 1px rgba(255,255,255,0.4);
+    aspect-ratio:4/5;
+  }
+  .hero-photo img{width:100%; height:100%; object-fit:cover; will-change:transform; transform:scale(1.06);}
+  .hero-photo::after{
+    content:""; position:absolute; inset:0; z-index:2;
+    background:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.5) 48%, transparent 60%);
+    transform:translateX(-120%); animation:sweep 6s ease-in-out 1s infinite;
+  }
+  @keyframes sweep{0%,100%{transform:translateX(-120%);}50%,100%{transform:translateX(120%);}}
+  .hero-badge{
+    position:absolute; left:-16px; bottom:26px; z-index:3;
+    background:rgba(244,247,245,0.85); backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.6); border-radius:16px; padding:14px 18px;
+    box-shadow:0 20px 40px -18px rgba(11,50,43,0.5);
+    display:flex; align-items:center; gap:12px;
+  }
+  .hero-badge .hb-num{font-family:'Fraunces',serif; font-weight:700; font-size:1.7rem; color:var(--emerald); line-height:1;}
+  .hero-badge .hb-txt{font-size:0.72rem; color:var(--muted); line-height:1.35; max-width:120px;}
+  @media(max-width:960px){ .hero-photo{aspect-ratio:16/11;} .hero-badge{left:12px;} }
+  @media (prefers-reduced-motion: reduce){
+    .hero-photo::after,.brand-mark::before{animation:none;}
+    .hero-photo img{transform:none;}
+  }
+
+  /* ---------- MARQUEE ---------- */
+  .marquee{
+    background:var(--deep); color:var(--brass-lite);
+    padding:14px 0; overflow:hidden; white-space:nowrap; position:relative;
+    border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .marquee-track{display:inline-flex; gap:0; animation:scrollx 26s linear infinite; will-change:transform;}
+  .marquee span{
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; padding:0 26px;
+    display:inline-flex; align-items:center; gap:26px;
+  }
+  .marquee span::after{content:"◆"; color:var(--brass); font-size:0.6rem; font-style:normal;}
+  @keyframes scrollx{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion: reduce){ .marquee-track{animation:none;} }
+
+  /* ---------- STATS ---------- */
+  .stats{padding:56px 0;}
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  @media(max-width:720px){ .stats-grid{grid-template-columns:1fr 1fr;} }
+  .stat{
+    background:linear-gradient(165deg, rgba(255,255,255,0.9), rgba(233,240,236,0.6));
+    border:1px solid var(--line); border-radius:var(--radius); padding:26px 22px; text-align:left;
+  }
+  .stat .snum{font-family:'Fraunces',serif; font-weight:700; font-size:2.4rem; color:var(--deep); line-height:1;}
+  .stat .snum b{color:var(--brass); font-weight:700;}
+  .stat .slabel{margin-top:8px; font-size:0.85rem; color:var(--muted); line-height:1.4;}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:84px 0;}
+  .section-head{max-width:640px; margin-bottom:48px;}
+  .section-eyebrow{font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); margin-bottom:14px; display:block;}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem); line-height:1.08;}
+  .section-head p{margin-top:14px; color:var(--muted); font-size:1.02rem; line-height:1.6;}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  @media(max-width:960px){ .services-grid{grid-template-columns:1fr 1fr;} }
+  @media(max-width:520px){ .services-grid{grid-template-columns:1fr;} }
+  .service-card{
+    background:linear-gradient(165deg, rgba(255,255,255,0.92), rgba(233,240,236,0.55));
+    border:1px solid var(--line); border-radius:var(--radius); padding:30px 24px;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .service-card:hover{transform:translateY(-6px); box-shadow:0 26px 44px -22px rgba(11,50,43,0.3);}
+  .service-icon{
+    width:48px; height:48px; border-radius:13px; background:var(--deep);
+    display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  }
+  .service-icon svg{width:23px; height:23px; stroke:var(--brass-lite);}
+  .service-card h3{font-size:1.18rem; margin-bottom:8px;}
+  .service-card p{font-size:0.9rem; color:var(--muted); line-height:1.55; margin:0;}
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal{opacity:0; transform:translateY(34px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);}
+  .reveal.visible{opacity:1; transform:translateY(0);}
+  /* left-to-right text slide-in */
+  .reveal-left{opacity:0; transform:translateX(-52px); transition:opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1);}
+  .reveal-left.visible{opacity:1; transform:translateX(0);}
+  .reveal-left > *{opacity:0; transform:translateX(-32px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal-left.visible > *{opacity:1; transform:translateX(0);}
+  .reveal-left.visible > *:nth-child(2){transition-delay:.1s;}
+  .reveal-left.visible > *:nth-child(3){transition-delay:.2s;}
+  .reveal-left.visible > *:nth-child(4){transition-delay:.3s;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal-left, .reveal-left > *{opacity:1; transform:none; transition:none;}
+  }
+  .reveal-stagger.visible > *{animation:pop .7s cubic-bezier(.2,.7,.2,1) both;}
+  .reveal-stagger.visible > *:nth-child(1){animation-delay:.02s;}
+  .reveal-stagger.visible > *:nth-child(2){animation-delay:.08s;}
+  .reveal-stagger.visible > *:nth-child(3){animation-delay:.14s;}
+  .reveal-stagger.visible > *:nth-child(4){animation-delay:.20s;}
+  .reveal-stagger.visible > *:nth-child(5){animation-delay:.26s;}
+  .reveal-stagger.visible > *:nth-child(6){animation-delay:.32s;}
+  .reveal-stagger.visible > *:nth-child(7){animation-delay:.38s;}
+  .reveal-stagger.visible > *:nth-child(8){animation-delay:.44s;}
+  .reveal-stagger.visible > *:nth-child(9){animation-delay:.50s;}
+  .reveal-stagger.visible > *:nth-child(n+10){animation-delay:.56s;}
+  @keyframes pop{from{opacity:0; transform:translateY(30px) scale(.98);}to{opacity:1; transform:translateY(0) scale(1);}}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    .reveal-stagger.visible > *{animation:none;}
+  }
+
+  /* ---------- PRODUCTS ---------- */
+  .product-tabs{display:flex; gap:9px; flex-wrap:wrap; margin-bottom:34px;}
+  .ptab{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem; padding:10px 18px; border-radius:100px;
+    border:1px solid var(--line); background:rgba(255,255,255,0.6); color:var(--muted); cursor:pointer; transition:all .2s;
+  }
+  .ptab.active{background:var(--deep); color:#fff; border-color:var(--deep);}
+  .ptab:hover:not(.active){border-color:var(--brass); color:var(--ink);}
+
+  .products-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  @media(max-width:980px){ .products-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:520px){ .products-grid{grid-template-columns:1fr 1fr; gap:12px;} }
+  .product-tile{
+    position:relative; background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, opacity .35s ease;
+  }
+  .product-tile.hidden-tile{display:none;}
+  .product-tile{cursor:pointer;}
+  .product-tile:hover{box-shadow:0 26px 46px -22px rgba(11,50,43,0.32); transform:translateY(-5px);}
+  .product-visual .zoom-hint{
+    position:absolute; z-index:2; top:10px; right:10px;
+    width:30px; height:30px; border-radius:50%;
+    background:rgba(11,50,43,0.55); color:#fff; display:flex; align-items:center; justify-content:center;
+    opacity:0; transform:scale(.8); transition:opacity .25s, transform .25s; backdrop-filter:blur(3px);
+  }
+  .product-visual .zoom-hint svg{width:15px; height:15px;}
+  .product-tile:hover .zoom-hint{opacity:1; transform:scale(1);}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center;
+    padding:24px; background:rgba(6,25,21,0.82); backdrop-filter:blur(8px);
+    opacity:0; visibility:hidden; transition:opacity .3s ease, visibility .3s ease;
+  }
+  .lightbox.open{opacity:1; visibility:visible;}
+  .lightbox figure{margin:0; max-width:900px; width:100%; transform:scale(.94); transition:transform .35s cubic-bezier(.2,.7,.2,1);}
+  .lightbox.open figure{transform:scale(1);}
+  .lightbox img{width:100%; max-height:80vh; object-fit:contain; border-radius:14px; box-shadow:0 30px 70px -20px rgba(0,0,0,0.6);}
+  .lightbox figcaption{
+    text-align:center; color:#fff; margin-top:16px;
+    font-family:'Fraunces',serif; font-size:1.25rem; font-weight:600;
+  }
+  .lightbox figcaption small{display:block; font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--brass-lite); letter-spacing:0.12em; text-transform:uppercase; margin-top:6px; font-weight:400;}
+  .lb-close{
+    position:absolute; top:18px; right:18px; width:46px; height:46px; border-radius:50%;
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25); color:#fff;
+    font-size:1.6rem; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:background .2s, transform .2s;
+  }
+  .lb-close:hover{background:var(--brass); transform:rotate(90deg);}
+  @media (prefers-reduced-motion: reduce){ .lightbox,.lightbox figure{transition:none;} .lb-close:hover{transform:none;} }
+  .product-visual{position:relative; aspect-ratio:4/3; overflow:hidden; background:var(--bg-2);}
+  .product-visual img{width:100%; height:100%; object-fit:cover; transition:transform .6s cubic-bezier(.2,.7,.2,1);}
+  .product-tile:hover .product-visual img{transform:scale(1.09);}
+  .product-visual::after{
+    content:""; position:absolute; inset:0; z-index:1;
+    background:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.55) 48%, transparent 62%);
+    transform:translateX(-120%); transition:transform .7s ease;
+  }
+  .product-tile:hover .product-visual::after{transform:translateX(120%);}
+  .product-body{padding:16px 16px 18px;}
+  .product-body .cat{font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--brass); display:block; margin-bottom:6px;}
+  .product-body h4{font-size:1rem; font-weight:600; margin:0 0 5px;}
+  .product-body p{font-size:0.8rem; color:var(--muted); line-height:1.5; margin:0;}
+  @media(max-width:520px){ .product-body h4{font-size:0.92rem;} .product-body p{font-size:0.74rem;} }
+
+  /* ---------- CONFIGURATOR ---------- */
+  .config-wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:44px; align-items:center;}
+  @media(max-width:900px){ .config-wrap{grid-template-columns:1fr; gap:32px;} }
+  .configurator-stage{perspective:1400px;}
+  .pane-card{
+    position:relative; background:linear-gradient(160deg, rgba(255,255,255,0.85), rgba(233,240,236,0.5));
+    border:1px solid rgba(255,255,255,0.7); border-radius:22px; padding:26px 26px 30px;
+    box-shadow:0 34px 64px -26px rgba(11,50,43,0.38), inset 0 1px 0 rgba(255,255,255,0.8);
+    backdrop-filter:blur(6px); transform-style:preserve-3d; transition:transform .12s ease-out; will-change:transform;
+  }
+  .pane-card-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:18px;}
+  .pane-card-head .tag{font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted);}
+  .pane-card-head .live{display:flex; align-items:center; gap:6px; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; color:var(--brass);}
+  .live .dot{width:6px; height:6px; border-radius:50%; background:var(--brass); animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+  .pane-preview{position:relative; height:190px; border-radius:14px; margin-bottom:20px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, rgba(28,107,90,0.18), rgba(255,255,255,0.55)); overflow:hidden; box-shadow:inset 0 0 0 1px rgba(28,107,90,0.28);}
+  .pane-preview .sheet{position:relative; border-radius:6px; background:linear-gradient(120deg, rgba(255,255,255,0.85) 0%, rgba(28,107,90,0.28) 45%, rgba(255,255,255,0.6) 100%); box-shadow:0 10px 30px -10px rgba(11,50,43,0.35), inset 0 0 0 1px rgba(255,255,255,0.9); transition:width .25s ease, height .25s ease;}
+  .pane-preview .sheet::after{content:""; position:absolute; inset:0; background:linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.85) 45%, transparent 60%); transform:translateX(-40%); animation:shine 4.5s ease-in-out infinite;}
+  @keyframes shine{0%,100%{transform:translateX(-70%);}50%{transform:translateX(70%);}}
+  @media (prefers-reduced-motion: reduce){ .pane-preview .sheet::after{animation:none;} .live .dot{animation:none;} }
+  .field-row{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;}
+  .field{display:flex; flex-direction:column; gap:6px;}
+  .field label{font-size:0.72rem; color:var(--muted); font-weight:600;}
+  .field input[type=number]{font-family:'IBM Plex Mono',monospace; font-size:0.92rem; padding:11px 12px; border-radius:10px; border:1px solid rgba(89,112,106,0.3); background:rgba(255,255,255,0.85); color:var(--ink);}
+  .field input[type=number]:focus{border-color:var(--brass); outline:none;}
+  .type-pills{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px;}
+  .pill{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; padding:8px 13px; border-radius:100px; border:1px solid rgba(89,112,106,0.32); background:rgba(255,255,255,0.6); cursor:pointer; color:var(--muted); transition:all .15s;}
+  .pill.active{background:var(--deep); color:#fff; border-color:var(--deep);}
+  .result-row{display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px dashed rgba(89,112,106,0.35);}
+  .result-row .size-out{font-family:'Fraunces',serif; font-weight:700; font-size:1.3rem;}
+  .result-row .size-out span{color:var(--brass);}
+  .result-row a.quote-btn{font-size:0.82rem; font-weight:600; background:var(--brass); color:#fff; padding:10px 16px; border-radius:100px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:transform .15s;}
+  .result-row a.quote-btn:hover{transform:translateY(-2px);}
+
+  /* ---------- DARK / WHY US ---------- */
+  .dark-section{background:var(--deep); color:#fff; position:relative; overflow:hidden;}
+  .dark-section::before{content:""; position:absolute; inset:0; background:linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.05) 50%, transparent 60%), radial-gradient(45% 60% at 90% 8%, rgba(185,135,59,0.2), transparent 60%);}
+  .dark-section .section-head p{color:var(--muted-lite);}
+  .why-grid{position:relative; z-index:1; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media(max-width:860px){ .why-grid{grid-template-columns:1fr;} }
+  .why-card{background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.13); border-radius:var(--radius); padding:30px; transition:transform .3s, background .3s;}
+  .why-card:hover{transform:translateY(-5px); background:rgba(255,255,255,0.08);}
+  .why-card .num{font-family:'IBM Plex Mono',monospace; color:var(--brass-lite); font-size:0.8rem; margin-bottom:14px; display:block;}
+  .why-card h3{font-size:1.2rem; margin-bottom:10px;}
+  .why-card p{font-size:0.92rem; color:var(--muted-lite); line-height:1.6; margin:0;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:stretch;}
+  @media(max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact-card{background:linear-gradient(165deg, rgba(255,255,255,0.92), rgba(233,240,236,0.6)); border:1px solid var(--line); border-radius:var(--radius); padding:38px;}
+  .contact-card h3{font-size:1.4rem; margin-bottom:22px;}
+  .contact-line{display:flex; gap:14px; align-items:flex-start; padding:16px 0; border-bottom:1px solid var(--line);}
+  .contact-line:last-child{border-bottom:none;}
+  .contact-line svg{width:19px; height:19px; color:var(--brass); flex:none; margin-top:2px;}
+  .contact-line .label{font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); margin-bottom:4px; font-family:'IBM Plex Mono',monospace;}
+  .contact-line .value{font-size:0.98rem; font-weight:500; line-height:1.5;}
+  .contact-line a.value{text-decoration:none; color:var(--ink);}
+  .contact-line a.value:hover{color:var(--brass);}
+  .map-frame{border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); min-height:360px; position:relative;}
+  .map-frame iframe{width:100%; height:100%; min-height:360px; border:0; display:block;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--deep); color:var(--muted-lite); padding:46px 0 30px;}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:10px; color:#fff; font-family:'Fraunces',serif; font-weight:600; font-size:1.1rem;}
+  footer .footer-note{font-size:0.8rem; color:var(--muted-lite); margin-top:22px; border-top:1px solid rgba(255,255,255,0.08); padding-top:20px;}
+
+  /* floating buttons */
+  .fabs{position:fixed; bottom:22px; right:20px; z-index:60; display:flex; flex-direction:column; gap:12px;}
+  .fab{width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; color:#fff; box-shadow:0 14px 26px -8px rgba(11,50,43,0.55); transition:transform .2s;}
+  .fab:hover{transform:translateY(-3px) scale(1.05);}
+  .fab.call{background:var(--brass);}
+  .fab.wa{background:#25D366;}
+  .fab svg{width:26px; height:26px;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Thakur Kripa<small>GLASS &amp; ALUMINIUM</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#configurator">Estimate Size</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="tel:+918302095295">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      083020 95295
+    </a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Raipura · Kota, Rajasthan</span>
+        <div class="hero-brand">
+          <span class="l1">Thakur Kripa</span>
+          <span class="l2">Glass &amp; Aluminium</span>
+          <span class="hero-sub">Cut · Framed · Fitted</span>
+        </div>
+        <p class="lead">Mirrors, 2mm–12mm glass, toughened glass and aluminium fittings — custom cut to your exact size and installed at your home, shop or site.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+918302095295">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/918302095295" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="trust-row">
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Custom cut on order</span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>On-site fitting</span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Local to Kota</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <img id="heroImg" src="https://images.unsplash.com/photo-1481026469463-66327c86e544?auto=format&fit=crop&w=900&q=75" alt="Modern glass facade — precision cut glass panels" loading="eager">
+        </div>
+        <div class="hero-badge">
+          <span class="hb-num">2–12<span style="font-size:1rem;">mm</span></span>
+          <span class="hb-txt">glass thickness range, cut to any size</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Plain Glass</span><span>Mirrors</span><span>Toughened Glass</span><span>LED Mirrors</span><span>Aluminium Windows</span><span>Glass Partitions</span><span>Photo Framing</span><span>Shower Cubicles</span><span>Reflective Glass</span>
+      <span>Plain Glass</span><span>Mirrors</span><span>Toughened Glass</span><span>LED Mirrors</span><span>Aluminium Windows</span><span>Glass Partitions</span><span>Photo Framing</span><span>Shower Cubicles</span><span>Reflective Glass</span>
+    </div>
+  </div>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="wrap">
+      <div class="stats-grid reveal reveal-stagger">
+        <div class="stat"><div class="snum" data-count="12" data-suffix="mm">0</div><div class="slabel">Glass up to 12mm — 2mm to 12mm range</div></div>
+        <div class="stat"><div class="snum" data-count="10" data-suffix="+">0</div><div class="slabel">Product types in our catalogue</div></div>
+        <div class="stat"><div class="snum" data-count="4"><b>4</b></div><div class="slabel">Materials: glass, mirror, aluminium, framing</div></div>
+        <div class="stat"><div class="snum">On-site</div><div class="slabel">Measured &amp; fitted at your location</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <span class="section-eyebrow">What we make</span>
+        <h2>Four kinds of work, one workshop.</h2>
+        <p>From a single bathroom mirror to full aluminium shopfronts — every job is measured, cut and fitted in-house.</p>
+      </div>
+      <div class="services-grid reveal reveal-stagger">
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 3v18M16 3v18"/></svg></div>
+          <h3>Mirror Work</h3>
+          <p>Wall, dressing, bevelled &amp; LED-back mirrors — cut and polished to size.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Glass Work</h3>
+          <p>Window &amp; door glass, table tops, partitions and toughened glass, cut to your opening.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h6M9 13h6M9 17h6"/></svg></div>
+          <h3>Aluminium Fittings</h3>
+          <p>Aluminium windows, doors, partitions and shopfront framing, fitted on-site.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+          <h3>Interior &amp; Framing</h3>
+          <p>Shower cubicles, glass partitions, photo framing &amp; decorative interior glass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="products" style="padding-top:20px;">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <span class="section-eyebrow">Browse the range</span>
+        <h2>What you can order, cut to size.</h2>
+        <p>A quick look at what leaves our workshop most — every piece made to your measurement, not off a shelf.</p>
+      </div>
+
+      <div class="product-tabs reveal">
+        <button class="ptab active" data-filter="all">All</button>
+        <button class="ptab" data-filter="mirror">Mirrors</button>
+        <button class="ptab" data-filter="glass">Glass</button>
+        <button class="ptab" data-filter="aluminium">Aluminium</button>
+        <button class="ptab" data-filter="interior">Interior</button>
+      </div>
+
+      <div class="products-grid reveal reveal-stagger" id="productsGrid">
+
+        <div class="product-tile" data-cat="glass">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1479293581560-aee98bb24f7f?auto=format&fit=crop&w=600&q=70" alt="Plain glass panels" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Glass</span><h4>Plain Glass 2–12mm</h4><p>Clear glass for windows, doors &amp; more.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="mirror">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?auto=format&fit=crop&w=600&q=70" alt="Round wall mirror in an entryway" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Mirror</span><h4>Wall Mirrors 4/5mm</h4><p>Plain or bevelled, cut to your wall size.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="mirror">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=70" alt="Bathroom mirror above a vanity" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Mirror</span><h4>LED &amp; Bathroom Mirrors</h4><p>Edge-lit, moisture-safe fitting.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="mirror">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?auto=format&fit=crop&w=600&q=70" alt="Full-length dressing mirror" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Mirror</span><h4>Dressing Mirrors</h4><p>Full-length wall-mount &amp; standing mirrors.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="mirror">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1595455967759-5f1356993e53?auto=format&fit=crop&w=600&q=70" alt="Cluster of designer decorative mirrors" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Mirror</span><h4>Designer Mirrors</h4><p>Readymade designed &amp; framed mirrors.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="glass">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1571781418606-70265b9cce90?auto=format&fit=crop&w=600&q=70" alt="Toughened glass shower door" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Glass</span><h4>Toughened Glass</h4><p>Safety glass for doors, partitions &amp; balconies.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="aluminium">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1569216961559-fd512349ebba?auto=format&fit=crop&w=600&q=70" alt="Aluminium framed casement window" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Aluminium</span><h4>Windows &amp; Doors</h4><p>Sliding &amp; casement, custom frame sizes.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="interior">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1609280069904-ab36feb3f20c?auto=format&fit=crop&w=600&q=70" alt="Walk-in glass shower cubicle" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Interior</span><h4>Partitions &amp; Shower</h4><p>Framed &amp; frameless glass enclosures.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="interior">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=70" alt="Gallery wall of framed pictures" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Interior</span><h4>Photo Framing</h4><p>Custom frames for photos &amp; artwork.</p></div>
+        </div>
+
+        <div class="product-tile" data-cat="glass">
+          <div class="product-visual"><img src="https://images.unsplash.com/photo-1621831337128-35676ca30868?auto=format&fit=crop&w=600&q=70" alt="Reflective coloured glass facade" loading="lazy"></div>
+          <div class="product-body"><span class="cat">Glass</span><h4>Reflective Colour Glass</h4><p>Tinted &amp; reflective glass, 3.5mm up.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONFIGURATOR ============ -->
+  <section id="configurator" style="padding-top:20px;">
+    <div class="wrap config-wrap">
+      <div class="section-head reveal" style="margin-bottom:0;">
+        <span class="section-eyebrow">Estimate size</span>
+        <h2>See your cut, get a quick estimate.</h2>
+        <p>Enter your width and height to see the sheet size and square footage. Call us for an exact, final quote.</p>
+      </div>
+
+      <div class="configurator-stage reveal">
+        <div class="pane-card" id="paneCard">
+          <div class="pane-card-head">
+            <span class="tag">Cut-to-size preview</span>
+            <span class="live"><span class="dot"></span> live</span>
+          </div>
+          <div class="pane-preview"><div class="sheet" id="sheetPreview"></div></div>
+          <div class="field-row">
+            <div class="field"><label for="widthIn">Width (inches)</label><input type="number" id="widthIn" min="6" max="96" value="36"></div>
+            <div class="field"><label for="heightIn">Height (inches)</label><input type="number" id="heightIn" min="6" max="96" value="48"></div>
+          </div>
+          <div class="type-pills" id="typePills">
+            <button class="pill active" data-type="Plain Glass">Plain Glass</button>
+            <button class="pill" data-type="Mirror">Mirror</button>
+            <button class="pill" data-type="Frosted">Frosted</button>
+            <button class="pill" data-type="Tinted">Tinted</button>
+          </div>
+          <div class="result-row">
+            <div class="size-out mono"><span id="sqftOut">12.0</span> sq ft</div>
+            <a class="quote-btn" href="tel:+918302095295">Get exact quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="dark-section">
+    <div class="wrap">
+      <div class="section-head reveal-left">
+        <span class="section-eyebrow">Why call us</span>
+        <h2>Measured right. Cut once. Fitted properly.</h2>
+        <p>A local workshop that handles the full job — measurement to installation — instead of passing you between vendors.</p>
+      </div>
+      <div class="why-grid reveal reveal-stagger">
+        <div class="why-card"><span class="num mono">01</span><h3>Exact measurements</h3><p>Every piece is measured against your actual site or frame before cutting, not a standard size.</p></div>
+        <div class="why-card"><span class="num mono">02</span><h3>One workshop, every material</h3><p>Glass, mirror and aluminium under one roof — no running between separate vendors.</p></div>
+        <div class="why-card"><span class="num mono">03</span><h3>Fitted, not just delivered</h3><p>We install what we cut — mirrors mounted, windows fitted, partitions sealed on-site.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal-left"><span class="section-eyebrow">Visit the workshop</span><h2>Get in touch.</h2></div>
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <h3>Thakur Kripa Glass &amp; Aluminium</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div class="label">Address</div><div class="value">Mansarovar Colony, Plot No. 10, Deoli Arab Road, Raipura, Kota, Rajasthan 324004</div></div>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><div class="label">Phone</div><a class="value" href="tel:+918302095295">083020 95295</a></div>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <div><div class="label">WhatsApp</div><a class="value" href="https://wa.me/918302095295" target="_blank" rel="noopener">Message on WhatsApp</a></div>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div><div class="label">Hours</div><div class="value">Morning 10:00 AM – Evening 8:00 PM</div></div>
+          </div>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Thakur+Kripa+Glass+and+Aluminium,+Mansarovar+Colony,+Deoli+Arab+Road,+Raipura,+Kota,+Rajasthan+324004&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Thakur Kripa Glass and Aluminium location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true" style="width:30px;height:30px;"></span>Thakur Kripa Glass &amp; Aluminium</div>
+      <div class="mono" style="font-size:0.8rem;">Raipura, Kota, Rajasthan · 083020 95295</div>
+    </div>
+    <div class="footer-note">Glass &amp; mirror shop in Kota, Rajasthan. Product images are illustrative. Cut-to-size estimate on this site is approximate — call for an exact quote.</div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product image">
+  <button class="lb-close" id="lbClose" aria-label="Close image">&times;</button>
+  <figure>
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<div class="fabs">
+  <a class="fab wa" href="https://wa.me/918302095295" target="_blank" rel="noopener" aria-label="WhatsApp Thakur Kripa Glass and Aluminium">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+  <a class="fab call" href="tel:+918302095295" aria-label="Call Thakur Kripa Glass and Aluminium">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script>
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- Configurator 3D tilt ----
+  const stage = document.querySelector('.configurator-stage');
+  const card = document.getElementById('paneCard');
+  if (stage && card && !reduceMotion){
+    stage.addEventListener('mousemove', (e)=>{
+      const r = stage.getBoundingClientRect();
+      const x = (e.clientX - r.left)/r.width - 0.5;
+      const y = (e.clientY - r.top)/r.height - 0.5;
+      card.style.transform = `rotateY(${x*9}deg) rotateX(${-y*9}deg)`;
+    });
+    stage.addEventListener('mouseleave', ()=>{ card.style.transform = 'rotateY(0) rotateX(0)'; });
+  }
+
+  // ---- Live size configurator ----
+  const widthInput = document.getElementById('widthIn');
+  const heightInput = document.getElementById('heightIn');
+  const sheetPreview = document.getElementById('sheetPreview');
+  const sqftOut = document.getElementById('sqftOut');
+  const typeStyles = {
+    'Plain Glass':'linear-gradient(120deg, rgba(255,255,255,0.85) 0%, rgba(28,107,90,0.28) 45%, rgba(255,255,255,0.6) 100%)',
+    'Mirror':'linear-gradient(120deg, rgba(220,228,225,0.95) 0%, rgba(120,145,138,0.55) 50%, rgba(230,236,233,0.95) 100%)',
+    'Frosted':'linear-gradient(120deg, rgba(255,255,255,0.95), rgba(220,228,225,0.9))',
+    'Tinted':'linear-gradient(120deg, rgba(185,135,59,0.35), rgba(28,107,90,0.4))'
+  };
+  function updatePreview(){
+    const w = Math.max(6, Math.min(96, parseFloat(widthInput.value)||0));
+    const h = Math.max(6, Math.min(96, parseFloat(heightInput.value)||0));
+    const scale = Math.min(220/w, 160/h)*0.92;
+    sheetPreview.style.width = (w*scale)+'px';
+    sheetPreview.style.height = (h*scale)+'px';
+    sqftOut.textContent = ((w*h)/144).toFixed(1);
+  }
+  widthInput.addEventListener('input', updatePreview);
+  heightInput.addEventListener('input', updatePreview);
+  document.querySelectorAll('.pill').forEach(p=>{
+    p.addEventListener('click', ()=>{
+      document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+      sheetPreview.style.background = typeStyles[p.dataset.type];
+    });
+  });
+  updatePreview();
+
+  // ---- Count-up stats ----
+  function countUp(el){
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    if (reduceMotion){ el.textContent = target + suffix; return; }
+    let cur = 0;
+    const step = Math.max(1, Math.ceil(target/28));
+    const t = setInterval(()=>{
+      cur += step;
+      if (cur >= target){ cur = target; clearInterval(t); }
+      el.textContent = cur + suffix;
+    }, 26);
+  }
+
+  // ---- Scroll reveal + trigger count-up ----
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left');
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if (entry.isIntersecting){
+          entry.target.classList.add('visible');
+          entry.target.querySelectorAll('.snum[data-count]').forEach(countUp);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.14, rootMargin:'0px 0px -60px 0px' });
+    revealEls.forEach(el=>io.observe(el));
+  } else {
+    revealEls.forEach(el=>{ el.classList.add('visible'); el.querySelectorAll('.snum[data-count]').forEach(countUp); });
+  }
+
+  // ---- Hero image parallax ----
+  const heroImg = document.getElementById('heroImg');
+  if (heroImg && !reduceMotion){
+    window.addEventListener('scroll', ()=>{
+      const y = window.scrollY;
+      if (y < 900) heroImg.style.transform = `scale(1.06) translateY(${y*0.06}px)`;
+    }, { passive:true });
+  }
+
+  // ---- Product tab filter ----
+  const ptabs = document.querySelectorAll('.ptab');
+  const ptiles = document.querySelectorAll('.product-tile');
+  ptabs.forEach(tab=>{
+    tab.addEventListener('click', ()=>{
+      ptabs.forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      const f = tab.dataset.filter;
+      ptiles.forEach(tile=>{
+        tile.classList.toggle('hidden-tile', !(f==='all' || tile.dataset.cat===f));
+      });
+    });
+  });
+
+  // ---- Product lightbox (click tile -> large image) ----
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCap = document.getElementById('lbCap');
+  const lbClose = document.getElementById('lbClose');
+  const zoomSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>';
+
+  ptiles.forEach(tile=>{
+    // add a hover zoom hint to each tile
+    const vis = tile.querySelector('.product-visual');
+    const hint = document.createElement('span');
+    hint.className = 'zoom-hint'; hint.innerHTML = zoomSVG;
+    vis.appendChild(hint);
+
+    tile.addEventListener('click', ()=>{
+      const img = tile.querySelector('.product-visual img');
+      const title = tile.querySelector('h4') ? tile.querySelector('h4').textContent : '';
+      const cat = tile.querySelector('.cat') ? tile.querySelector('.cat').textContent : '';
+      // request a bigger version of the same Unsplash image
+      lbImg.src = img.src.replace(/([?&])w=\d+/, '$1w=1400');
+      lbImg.alt = img.alt;
+      lbCap.innerHTML = title + (cat ? '<small>'+cat+'</small>' : '');
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e=>{ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e=>{ if(e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
